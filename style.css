@@ -21,7 +21,7 @@ body {
 h1 {
   padding: 1rem;
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 3rem;
@@ -31,7 +31,7 @@ h1 {
   width: 70%;
   height: 70%;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -51,7 +51,7 @@ h1 {
 /* Used to align hands-divs inside this element */
 .hands-container {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0);
@@ -105,4 +105,17 @@ h1 {
   background: #333;
   border: 0.2rem solid #fff;
   z-index: 50;
+}
+/***********************************/
+.date-container {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 50%;
+}
+p.date {
+  font-size: 3rem;
+  font-style: italic;
 }
