@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Verdana, Tahoma, sans-serif;
+  position: relative;
+  font-size: 62.5%;
+}
+/* Used to hide svg dial hands */
+.hidden {
+  display: none;
+}
+
+h1 {
+  padding: 1rem;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+}
+
+.clock-container {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* SVG element */
+#clock {
+  width: 100%;
+  height: 100%;
+}
+/* Common .hands styling */
+.hands {
+  --rotation: 0;
+  transform-origin: bottom;
+  z-index: 10;
+  transform: rotate(calc(var(--rotation) * 1deg));
+  border: 1px solid #fff;
+}
+/* Used to align hands-divs inside this element */
+.hands-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0);
+  width: 41.37rem;
+  height: 41.37rem;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.hands {
+  --rotation-degree: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom;
+  transform: translateX(-50%) rotate(calc(var(--rotation-degree) * 1deg));
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  z-index: 20;
+}
+
+.hands-seconds-div {
+  width: 0.6rem;
+  height: 16rem;
+  background-color: red;
+  z-index: 40;
+}
+
+.hands-minutes-div {
+  width: 1.4rem;
+  height: 15rem;
+  background-color: #333;
+  z-index: 19;
+}
+
+.hands-hours-div {
+  width: 1.5rem;
+  height: 12rem;
+  background-color: #333;
+  z-index: 18;
+}
+
+.mask {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8%;
+  height: 8%;
+  border-radius: 50%;
+  background: #333;
+  border: 0.2rem solid #fff;
+  z-index: 50;
+}
