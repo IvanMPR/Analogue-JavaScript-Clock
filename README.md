@@ -1,5 +1,8 @@
 # Analogue JavaScript Clock
 HTML, CSS, JavaScript 
+<br>
+<img src="img/screenshot.jpg" width="100%">
+<br>
 
 I've created the clock entirely in the Adobe Illustrator, as SVG file.
 Idea was to select the clock hands out of the SVG document, and determine
