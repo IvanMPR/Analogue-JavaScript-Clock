@@ -4,7 +4,7 @@ HTML, CSS, JavaScript
 <img src="img/screenshot.jpg" width="100%">
 <br>
 
-I've created the clock entirely in the Adobe Illustrator, as SVG file.
+I've created the <a href="https://ivanmpr.github.io/Analogue-JavaScript-Clock/">clock</a> entirely in the Adobe Illustrator, as SVG file.
 Idea was to select the clock hands out of the SVG document, and determine
 their positions and rotations in JavaScript. However, I had problems to position
 the hands in the center, so I changed the approach. I made SVG clock hands invisible 
